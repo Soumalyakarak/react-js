@@ -13,7 +13,7 @@ function MyApp(){
 const anotherElement = (
   <a href="https://google.com" target = '_blank'>visit google</a>
 )
-const anotheruser = 'be a fighter'
+const anotheruser = 'be a fighter';
 const reactElement = React.createElement(
   'a',
   {href: 'https://google.com',target: '_blank'},
@@ -22,5 +22,6 @@ const reactElement = React.createElement(
 )
 
 createRoot(document.getElementById('root')).render(
+  anotherElement,
   reactElement
 )

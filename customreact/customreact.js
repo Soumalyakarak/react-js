@@ -8,7 +8,7 @@ function createRender(reactElement,container){
     domElement.innerHTML = reactElement.children
     for (const prop in reactElement.props) {
         if(prop === 'children') continue;
-        domElement.setAttribute = (prop, reactElement.props[prop])
+        domElement.setAttribute(prop, reactElement.props[prop]);
     }
 
     container.appendChild(domElement)
@@ -18,7 +18,7 @@ function createRender(reactElement,container){
 
 const reactElement = {
      type:'a',
-     props:{
+     props: {
          href:'https://google.com',
          target:'_blank'
      },
