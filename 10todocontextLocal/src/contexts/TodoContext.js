@@ -8,10 +8,10 @@ export const TodoContext = createContext({
             completed: false,
         }
     ],
-    addTodo: (todo) => {},
-    updatedTodo: (id, todo) => {},
-    deleteTodo: (id) => {},
-    toggleComplete: (id) => {}
+    addTodo: () => {},
+    updatedTodo: () => {},
+    deleteTodo: () => {},
+    toggleComplete: () => {}
 })
 
 
@@ -19,4 +19,4 @@ export const useTodo = () => {
     return useContext(TodoContext)
 }
 
-export const Todoprovider = Todoprovider.provider
+export const Todoprovider = TodoContext.Provider

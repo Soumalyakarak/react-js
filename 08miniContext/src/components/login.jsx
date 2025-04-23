@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react'
 import UserContext from '../context/UserContext'
 
-export function Login(props) {
+export function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
     const {setUser} = useContext(UserContext)
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
           e.preventDefault() 
           setUser({username, password}) 
     }
